@@ -19,6 +19,8 @@ A megrendelő ügyfele otthon, vagy akár a buszon ülve is képes információt
 
 ## 7. Használati esetek
 
+Az alkalmazás használati esetei közül a leggyakoribb amikor a felhasználók a weboldalon keresztül a megrendelhető autókat megtekintheti valamint az e-mailon keresztül történő autók bérlése. Valamint amikor az autókölcsönző főnöke az alkalmazásba belépve az autók módosítását, törlését és új autó hozzáadását végezheti.
+
 ## 8. Képernyőterv
 
 ## 9. Forgatókönyv
