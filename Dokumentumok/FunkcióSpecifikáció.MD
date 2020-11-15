@@ -25,6 +25,10 @@ Az alkalmazás használati esetei közül a leggyakoribb amikor a felhasználók
 
 ## 9. Forgatókönyv
 
+Az ügyfélnek szüksége van egy autóra. Jelenleg nincs az utókölcsönző közelében hanem otthonában tartózkodik ezért felkeresi az autókölcsönző oldalt. A jelenleg bérelhető autók közül válogathat. Majd miután kiválasztotta a számára legmegfelőbbet akkor küld egy emailt a kölcsönzőnek, hogy melyik autót és milyen időtartamra szeretné igénybe venni.
+
+A kölcsönző vezetője ha bent van az irodájában akkor meg tudja tekinteni az összes általuk kínált autót. Ezeket módosítani és újabb autókkal is tudja bővíteni a kínálatot. Ezen felül ugyanezeket a műveleteket meg tudja csinálni ha az irodán kívül van.
+
 ## 10. Funkciók
 
 ## 11. Fogalomszótár
