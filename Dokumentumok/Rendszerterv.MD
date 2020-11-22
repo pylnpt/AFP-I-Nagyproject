@@ -25,4 +25,6 @@ A webes alkalmazásban az üzletvezetőnek van a legnagyobb jogköre. Amíg a we
 
     Először emailba, majd telefonon leegyezteti az időpontot a bérlésre vonatkozóan. Így már csak a megbeszélt időpontban kell megjelennie és elhoznia a járművét. A kölcsönzés végét jelentő dátumon pedig visszaviszi ás átadja a bérelt járművet. Így újra bérelhetővé válik.
 
+## 4. Funkcionális leírás
 
+Az összes ügyfél számára látható az éppen bérelhető autók valamint a kölcsönzővel kapcsolatos adatok. Azonban csak az autókkal kapcsolatos műveleteket csak az üzletvezető képes módosítani. Leggyakoribb használati esete azonban mégis az ügyfelek böngészése lesz a weboldalon.
