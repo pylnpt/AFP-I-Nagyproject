@@ -2,6 +2,8 @@
 
 ## 1. Áttekintés
 
+A rendszer alapvető célja egy autókölcsönző webes felületű alkalmazás mellyel egy autókölcsönző üzleti folymatai válnak egyszerűbbé. Az alkalmazás segítségével a megrendelő versenyben marad a rivális autókölcsönzőkkel szemben. Az alkalmazás installálása után az autókölcsönző hatékonysága növekedni fog. A rendszernek nem célja, teljes egészében lecserélni a személyes kommunikációt. Az alkalmazás elsősorba az ott dolgozók munkáját fogja könnyebbé tenni.
+
 ## 2. Jelenlegi helyzet
 
 ## 3 Vágyálomrendszer
