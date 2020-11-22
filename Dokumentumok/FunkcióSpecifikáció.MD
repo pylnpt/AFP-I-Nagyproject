@@ -6,6 +6,8 @@ A rendszer alapvető célja egy autókölcsönző webes felületű alkalmazás m
 
 ## 2. Jelenlegi helyzet
 
+Jelenleg az autókölcsönzőben azt, hogy ki, milyen autót, mikor, mennyi időre bérelt ki, csak papír alapon tekinthető meg. A papír alapú módszer, működik, de eléggé lassú, emberi hibából adódóan a félreértések esélye jelentős. A megírt lapok elveszhetnek, szennyeződhetnek, az emberi írás mások számára olvashatatlan lehet.
+
 ## 3 Vágyálomrendszer
 
 ## 4. Jelenlegi üzleti folyamatok
