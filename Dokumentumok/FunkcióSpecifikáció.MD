@@ -23,7 +23,7 @@ A megrendelő ügyfele otthon, vagy akár a buszon ülve is képes információt
 
 ## 6. Követelménylista
 
-![KövetelményLista](Pictures/kovlista.jpg)
+![KövetelményLista](kovlista.jpg)
 
 ## 7. Használati esetek
 
