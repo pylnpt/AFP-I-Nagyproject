@@ -26,3 +26,9 @@ router.route('/add').post((req, res) => {
     .then(() => res.json('Reservation added!'))
     .catch(err => res.status(400).json('Error ' + err));
 });
+
+router.route('/:id').get((req, res) => {
+    Reservation.findById(req.params.id)
+        .then(reservation => res.json(reservation))
+        .catch(err => res.status(400).json('Error' + err));
+});
