@@ -38,3 +38,21 @@ router.route('/:id').delete((req, res) => {
         .then(reservation => res.json('Reservation deleted!'))
         .catch(err => res.status(400).json('Error' + err));
 });
+
+router.route('/update/:id').post((req, res) => {
+    Reservation.findById(req.params.id)
+        .then(reservation => {
+            reservation.firstName = req.body.firstName;
+            reservation.lastName = req.body.lastName;
+            reservation.email = req.body.email;
+            reservation.phoneNumber = req.body.phoneNumber;
+            reservation.plateNumber = Number(req.body.plateNumber);
+
+            reservation.save()
+                .then(reservation => res.json('Reservation updated!'))
+                .catch(err => res.status(400).json('Error' + err));
+        })
+        .catch(err => res.status(400).json('Error' + err));
+});
+
+module.exports = router;
