@@ -32,3 +32,9 @@ router.route('/:id').get((req, res) => {
         .then(reservation => res.json(reservation))
         .catch(err => res.status(400).json('Error' + err));
 });
+
+router.route('/:id').delete((req, res) => {
+    Reservation.findByIdAndDelete(req.params.id)
+        .then(reservation => res.json('Reservation deleted!'))
+        .catch(err => res.status(400).json('Error' + err));
+});
