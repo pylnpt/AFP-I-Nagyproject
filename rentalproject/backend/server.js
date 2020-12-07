@@ -18,7 +18,7 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
-const adminsRouter = require('./routes/admins');
+const adminsRouter = require('./routes/admins.js');
 const carsRouter = require('./routes/cars.js');
 const reservationsRouter = require('./routes/reservations');
 
