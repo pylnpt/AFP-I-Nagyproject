@@ -6,10 +6,10 @@ const keys = require("../config/keys");
 
 const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-opts.secretOrKey = keys.keys;
+opts.secretOrKey = keys.key;
 
 module.exports = config => {
-    config.use(
+    passport.use(
         new JwtStrategy(opts, (jwt_payload, done) => {
             Admin.findById(jwt_payload.id)
                 .then(admin => {
