@@ -9,7 +9,7 @@ import {
     Row,
     Col
   } from "reactstrap";
-  import BasicNavBar from "components/Navbars/BasicNavBar";
+  import BasicNavBar from "./Navbars/BasicNavBar";
 
 class Login extends Component {
     constructor() {
@@ -74,7 +74,7 @@ class Login extends Component {
                 <div
             className="section section-image section-login"
             style={{
-            backgroundImage: "url(" + require("assets/img/car_1.jpg") + ")"
+            backgroundImage: "url(" + require("../assets/img/car_1.jpg") + ")"
             }}
             >
             <Container>

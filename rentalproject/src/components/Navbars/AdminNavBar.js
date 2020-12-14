@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
-import classnames from "classnames";
 import { logoutUser } from "../../actions/authActions";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";

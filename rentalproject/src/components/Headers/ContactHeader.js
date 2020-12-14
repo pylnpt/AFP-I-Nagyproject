@@ -26,7 +26,7 @@ function ContactHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/contact_head.jpg") + ")"
+            "url(" + require("../../assets/img/contact_head.jpg") + ")"
         }}
         className="page-header page-header-xs"
         data-parallax={true}

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Container  } from "reactstrap";
-import AdminNavbar from "components/Navbars/AdminNavBar.js";
-import ContactHeader from "components/Headers/ContactHeader.js";
-import BasicFooter from "components/Footers/BasicFooter.js";
+import AdminNavbar from "./Navbars/AdminNavBar.js";
+import ContactHeader from "./Headers/ContactHeader.js";
+import BasicFooter from "./Footers/BasicFooter.js";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
