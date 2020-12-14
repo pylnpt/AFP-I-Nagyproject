@@ -8,7 +8,7 @@ const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = keys.key;
 
-module.exports = config => {
+module.exports = passport => {
     passport.use(
         new JwtStrategy(opts, (jwt_payload, done) => {
             Admin.findById(jwt_payload.id)

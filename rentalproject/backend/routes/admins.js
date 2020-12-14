@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 let Admin = require('../models/admin.model');
 const jwt = require('jsonwebtoken');
-const config = require('config');
 
 router.get('/', (req, res) =>{
     Admin.find()
