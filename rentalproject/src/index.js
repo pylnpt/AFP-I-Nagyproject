@@ -14,10 +14,10 @@ import "./assets/css/bootstrap.min.css";
 import "./assets/demo/demo.css";
 // pages
 import Index from "./views/Index.js";
-import NucleoIcons from "/views/NucleoIcons.js";
+import NucleoIcons from "./views/Nucleolcons.js";
 import CarListPage from "./components/cars-list.component";
 import CarAddPage from "./components/create-car.component";
-import ContactPage from '/views/pages/ContactPage';
+import ContactPage from './views/pages/ContactPage.js';
 import Login from "./components/login.component";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import OurCars from "./components/user-car-list.component";
