@@ -14,7 +14,6 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 // styles
 import "./assets/css/bootstrap.min.css";
 import "./assets/demo/demo.css";
-import "./assets/scss/paper-kit.scss";
 // pages
 import Index from "./views/Index.js";
 import NucleoIcons from "./views/Nucleolcons.js";
@@ -26,7 +25,6 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 import OurCars from "./components/user-car-list.component";
 import EditCar from "./components/edit-car.component";
 // others
-import Helmet from 'react-helmet';
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -51,9 +49,6 @@ function App() {
   return (
     
     <Provider store={store}>
-      <Helmet>
-    <title>Miraculum Autókölcsönző</title>
-    </Helmet>
   <BrowserRouter>
     <Switch>
       <Route path="/" render={props => <Index {...props} />} exact/>
