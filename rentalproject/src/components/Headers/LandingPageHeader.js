@@ -35,7 +35,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Stacionárius autókölcsönző</h1>
+            <h1>Miraculum autókölcsönző</h1>
             <br />
             <Button
               href="https://www.youtube.com/watch?v=prQ3QkTsvLw"
