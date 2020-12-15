@@ -13,14 +13,14 @@ import BasicFooter from "./Footers/BasicFooter.js";
 
 const Car = props => (
     <tr>
-        <td>{props.car.brand}</td>
+        <td>{props.car.make}</td>
         <td>{props.car.model}</td>
-        <td>{props.car.consumption}</td>
-        <td>{props.car.plateNumber}</td>
+        <td>{props.car.mpg}</td>
+        <td>{props.car.plate}</td>
         <td>
             <Link to={"/edit/"+props.car._id}>Szerkesztés</Link> | <a href="/car-list-page" onClick={() => { props.deleteCar(props.car._id) }}>Törlés</a>
         </td>
-        <td>{props.car.reserved}</td>
+        
     </tr>    
 )
 
@@ -32,10 +32,11 @@ class CarsList extends Component {
 
         this.state = { cars: [] };
     }
-
-    componentDidMount() {
+    
+    componentDidMount(){
         axios.get('http://localhost:5000/cars/')
             .then(res => {
+                console.log(res.data)
                 this.setState({ cars: res.data })
             })
             .catch((error) => {
@@ -57,9 +58,9 @@ class CarsList extends Component {
         })
     }
 
-    render() {
-    return (
-<>
+    render(){  
+    return(
+        <>
       <AdminNavbar />
       <ContactHeader />
         <Container>

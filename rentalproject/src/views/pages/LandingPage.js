@@ -39,7 +39,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Mi a stacionárius autókölcsönző?</h2>
+                <h2 className="title">Mi a Miraculum autókölcsönző?</h2>
                 <h5 className="description">
                   A Miraculum autókölcsönző évekkel
                   megelőzi a többi kölcsönzőt, nem csak a különleges autóink miatt! Számunkra fontos a környezetünk védelme is, így több
