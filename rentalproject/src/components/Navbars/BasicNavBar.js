@@ -54,7 +54,7 @@ function BasicNavBar() {
         <div className="navbar-translate">
         <NavbarBrand
             data-placement="bottom"
-            to="/index"
+            to="/"
             //target="_blank"
             tag={Link}
           >

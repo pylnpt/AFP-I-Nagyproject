@@ -50,7 +50,7 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/index"
+            href="/"
             //target="_blank"
           >
             Főoldal

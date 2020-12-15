@@ -1,7 +1,7 @@
 const router = require('express').Router();
 let Reservation = require('../models/reservation.model');
 
-router.route('/').get((req, res) => {
+router.route('/').get((req, res) =>{
     Reservation.find()
         .then(reservations => res.json(reservations))
         .catch(err => res.status(400).json('Error: ' + err));
@@ -23,8 +23,8 @@ router.route('/add').post((req, res) => {
     });
 
     newReservation.save()
-        .then(() => res.json('Reservation added!'))
-        .catch(err => res.status(400).json('Error ' + err));
+    .then(() => res.json('Reservation added!'))
+    .catch(err => res.status(400).json('Error ' + err));
 });
 
 router.route('/:id').get((req, res) => {
