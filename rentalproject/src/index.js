@@ -10,16 +10,15 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 
 // styles
-import "assets/css/bootstrap.min.css";
-import "assets/scss/paper-kit.scss";
-import "assets/demo/demo.css";
+import "./assets/css/bootstrap.min.css";
+import "./assets/demo/demo.css";
 // pages
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import CarListPage from "components/cars-list.component";
-import CarAddPage from "components/create-car.component";
-import ContactPage from 'views/pages/ContactPage';
-import Login from "components/login.component";
+import Index from "./views/Index.js";
+import NucleoIcons from "./views/Nucleolcons.js";
+import CarListPage from "./components/cars-list.component";
+import CarAddPage from "./components/create-car.component";
+import ContactPage from './views/pages/ContactPage.js';
+import Login from "./components/login.component";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import OurCars from "./components/user-car-list.component";
 import EditCar from "./components/edit-car.component";
@@ -48,7 +47,7 @@ ReactDOM.render(
   <Provider store={store}>
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={props => <Index {...props} />} />
+      <Route path="/" render={props => <Index {...props} />} />
       <Route
         path="/nucleo-icons"
         render={props => <NucleoIcons {...props} />}

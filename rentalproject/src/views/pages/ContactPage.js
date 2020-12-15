@@ -10,9 +10,9 @@ import {
 } from "reactstrap";
 
 // core components
-import BasicNavBar from "components/Navbars/BasicNavBar.js";
-import ContactHeader from "components/Headers/ContactHeader.js";
-import BasicFooter from "components/Footers/BasicFooter.js";
+import BasicNavBar from "../../components/Navbars/BasicNavBar.js";
+import ContactHeader from "../../components/Headers/ContactHeader.js";
+import BasicFooter from "../../components/Footers/BasicFooter.js";
 
 function ProfilePage() {
 

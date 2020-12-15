@@ -17,9 +17,9 @@ import {
 } from "reactstrap";
 
 // core components
-import BasicNavBar from "components/Navbars/BasicNavBar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import BasicFooter from "components/Footers/BasicFooter.js";
+import BasicNavBar from "../components/Navbars/BasicNavBar.js";
+import LandingPageHeader from "../components/Headers/LandingPageHeader.js";
+import BasicFooter from "../components/Footers/BasicFooter.js";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -72,7 +72,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={e => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/medal.jpg")}
+                        src={require("./../assets/img/medal.jpg")}
                       />
                     </a>
                   </div>
@@ -95,7 +95,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={e => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/medal.jpg")}
+                        src={require("./../assets/img/medal.jpg")}
                       />
                     </a>
                   </div>
@@ -118,7 +118,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={e => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/medal.jpg")}
+                        src={require("./../assets/img/medal.jpg")}
                       />
                     </a>
                   </div>

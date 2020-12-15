@@ -5,9 +5,9 @@ import {
   } from "reactstrap";
   
   // core components
-  import ContactHeader from "components/Headers/ContactHeader.js";
-  import BasicFooter from "components/Footers/BasicFooter.js";
-  import BasicNavBar from "components/Navbars/BasicNavBar.js";
+  import ContactHeader from "./Headers/ContactHeader.js";
+  import BasicFooter from "./Footers/BasicFooter.js";
+  import BasicNavBar from "./Navbars/BasicNavBar.js";
 
 const Car = props => (
     <tr>
