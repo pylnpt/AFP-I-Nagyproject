@@ -7,9 +7,9 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
   
   // core components
-import AdminNavbar from "/Navbars/AdminNavBar.js";
-import ContactHeader from "/Headers/ContactHeader.js";
-import BasicFooter from "/Footers/BasicFooter.js";
+import AdminNavbar from "./Navbars/AdminNavBar.js";
+import ContactHeader from "./Headers/ContactHeader.js";
+import BasicFooter from "./Footers/BasicFooter.js";
 
 const Car = props => (
     <tr>

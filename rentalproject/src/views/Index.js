@@ -72,7 +72,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={e => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/medal.jpg")}
+                        src={require("./assets/img/medal.jpg")}
                       />
                     </a>
                   </div>
