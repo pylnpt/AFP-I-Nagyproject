@@ -1,27 +1,14 @@
 import React from "react";
-//google map components
-import {Map, GoogleApiWrapper } from 'google-maps-react';
 
 // reactstrap components
 import {
-  // Button,
-  // Label,
-  // FormGroup,
-  // Input,
-  // NavItem,
-  // NavLink,
-  // Nav,
-  // TabContent,
-  // TabPane,
-  Container,
-  Row,
-  Col
+  Container
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import ProfilePageHeader from "components/Headers/RegisterPageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import AdminNavbar from "components/Navbars/AdminNavBar.js";
+import ContactHeader from "components/Headers/ContactHeader.js";
+import BasicFooter from "components/Footers/BasicFooter.js";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -42,30 +29,21 @@ function ProfilePage() {
   return (
 
     <>
-      <ExamplesNavbar />
-      <ProfilePageHeader />
+      <AdminNavbar />
+      <ContactHeader />
       <div className="section profile-content">
         <Container>
           <div className="owner">
             
             <div className="name">
               <h2 className="title">
-               Miraculum Autókölcsönző  <br />
+               Ez az admin page...  <br />
               </h2>
             </div>
-          </div>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
-              <img>
-              </img>
-            </Col>
-          </Row>
-          <br />
-         
-         
+          </div>         
         </Container>
       </div>
-      <DemoFooter />
+      <BasicFooter />
     </>
   );
 }
