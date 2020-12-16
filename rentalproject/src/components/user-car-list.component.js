@@ -11,10 +11,10 @@ import {
 
 const Car = props => (
     <tr>
-        <td>{props.car.brand}</td>
+        <td>{props.car.make}</td>
         <td>{props.car.model}</td>
-        <td>{props.car.consumption}</td>
-        <td>{props.car.plateNumber}</td>
+        <td>{props.car.mpg}</td>
+        <td>{props.car.plate}</td>
     </tr>    
 )
 
@@ -25,7 +25,7 @@ export default class OurCars extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/cars/filtered')
+        axios.get('http://localhost:5000/cars/')
             .then(res => {
                 this.setState({ cars: res.data })
             })

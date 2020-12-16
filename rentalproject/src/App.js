@@ -73,7 +73,7 @@ function App() {
         path="/login"
         render={props => <Login {...props} />}
       />
-      <Redirect to="/index" />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>
   </Provider>
