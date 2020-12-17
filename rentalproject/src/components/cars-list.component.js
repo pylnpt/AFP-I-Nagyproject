@@ -17,6 +17,7 @@ const Car = props => (
         <td>{props.car.model}</td>
         <td>{props.car.mpg}</td>
         <td>{props.car.plate}</td>
+        <td>{props.car.reserved}</td>
         <td>
             <Link to={"/edit/"+props.car._id}>Szerkesztés</Link> | <a href="/car-list-page" onClick={() => { props.deleteCar(props.car._id) }}>Törlés</a>
         </td>

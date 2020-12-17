@@ -9,18 +9,18 @@ class EditCar extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeBrand = this.onChangeBrand.bind(this);
+        this.onChangemake = this.onChangemake.bind(this);
         this.onChangeModel = this.onChangeModel.bind(this);
-        this.onChangeConsumption = this.onChangeConsumption.bind(this);
-        this.onChangePlateNumber = this.onChangePlateNumber.bind(this);
+        this.onChangempg = this.onChangempg.bind(this);
+        this.onChangeplate = this.onChangeplate.bind(this);
         this.onChangeReserved = this.onChangeReserved.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            brand: '',
+            make: '',
             model: '',
-            consumption: 0,
-            plateNumber: '',
+            mpg: 0,
+            plate: '',
             reserved: ''
         }
     }
@@ -29,10 +29,10 @@ class EditCar extends Component {
         axios.get('http://localhost:5000/cars/'+this.props.match.params.id)
             .then(res => {
                 this.setState({
-                    brand: res.data.brand,
+                    make: res.data.make,
                     model: res.data.model,
-                    consumption: res.data.consumption,
-                    plateNumber: res.data.plateNumber,
+                    mpg: res.data.mpg,
+                    plate: res.data.plate,
                     reserved: res.data.reserved
                 })
             })
@@ -47,21 +47,21 @@ class EditCar extends Component {
         })
     }
 
-    onChangeBrand(e) {
+    onChangemake(e) {
         this.setState({
-            brand: e.target.value
+            make: e.target.value
         })
     }
 
-    onChangeConsumption(e) {
+    onChangempg(e) {
         this.setState({
-            consumption: e.target.value
+            mpg: e.target.value
         })
     }
 
-    onChangePlateNumber(e) {
+    onChangeplate(e) {
         this.setState({
-            plateNumber: e.target.value
+            plate: e.target.value
         })
     }
 
@@ -76,9 +76,9 @@ class EditCar extends Component {
 
         const car = {
             model: this.state.model,
-            brand: this.state.brand,
-            consumption: this.state.consumption,
-            plateNumber: this.state.plateNumber,
+            make: this.state.make,
+            mpg: this.state.mpg,
+            plate: this.state.plate,
             reserved: this.state.reserved
         }
 
@@ -88,9 +88,9 @@ class EditCar extends Component {
 
         this.setState({
             model: '',
-            brand: '',
-            consumption: 0,
-            plateNumber: '',
+            make: '',
+            mpg: 0,
+            plate: '',
             reserved: ''
         })
 
@@ -114,21 +114,21 @@ class EditCar extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Brand: </label>
+                        <label>make: </label>
                         <input type="text"
                             required
                             className="form-control"
-                            value={this.state.brand}
-                            onChange={this.onChangeBrand}
+                            value={this.state.make}
+                            onChange={this.onChangemake}
                         />
                     </div>
                     <div className="form-group">
-                        <label>Consumption: </label>
+                        <label>mpg: </label>
                         <input type="number"
                             required
                             className="form-control"
-                            value={this.state.consumption}
-                            onChange={this.onChangeConsumption}
+                            value={this.state.mpg}
+                            onChange={this.onChangempg}
                         />
                     </div>
                     <div className="form-group">
@@ -136,8 +136,8 @@ class EditCar extends Component {
                         <input type="text"
                             required
                             className="form-control"
-                            value={this.state.plateNumber}
-                            onChange={this.onChangePlateNumber}
+                            value={this.state.plate}
+                            onChange={this.onChangeplate}
                         />
                     </div>
                     <div className="form-group">

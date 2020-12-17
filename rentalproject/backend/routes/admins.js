@@ -37,13 +37,12 @@ router.post('/update/:id', (req, res) => {
 
 router.post('/login', function (req, res) {
   const {username, password} = req.body;
-  
   Admin.findOne({username: username}, (err, userData) => {
     if(!err && userData !== null){
         if(password == userData.password){
           jwt.sign(
             { id: userData.id},
-            config.get('jwtSecret'),
+            process.env.JWT_SECRET,
             { expiresIn: 3600},
             (err, token) => {
               if(err) throw err;
@@ -56,10 +55,12 @@ router.post('/login', function (req, res) {
         }
         else{
           res.status(401).send('Incorrect password!');
+          
         }
     }
     else{
-      res.status(401).send('Incorrect username!');
+      //res.status(401).send('Incorrect username!');
+      res.send(username);
     }
   })
 })

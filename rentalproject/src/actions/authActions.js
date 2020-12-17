@@ -10,7 +10,7 @@ import {
 // Login - get user token
 export const loginUser = userData => dispatch => {
   axios
-    .post("http://localhost:5000/api/admins/login", userData)
+    .post("http://localhost:5000/admins/login", userData)
     .then(res => {
       // Save to localStorage
 // Set token to localStorage
@@ -26,7 +26,7 @@ export const loginUser = userData => dispatch => {
     .catch(err =>
       dispatch({
         type: GET_ERRORS,
-        payload: err.response.data
+        payload: err.response
       })
     );
 };

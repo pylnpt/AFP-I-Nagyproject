@@ -17,17 +17,17 @@ router.get('/filtered', (req, res) =>{
 });
 
 router.post('/add', (req, res) => {
-        const brand = req.body.brand;
+        const make = req.body.make;
         const model = req.body.model;
-        const consumption = Number(req.body.consumption);
-        const plateNumber = req.body.plateNumber;
+        const mpg = Number(req.body.mpg);
+        const plate = req.body.plate;
         const reserved = req.body.reserved;
     
         const newCar = new Car({
-            brand,
+            make,
             model,
-            consumption,
-            plateNumber,
+            mpg,
+            plate,
             reserved
         });
     
@@ -52,10 +52,10 @@ router.delete('/:id', (req, res) => {
 router.post('/update/:id', (req, res) => {
     Car.findById(req.params.id)
         .then(car => {
-            car.brand = req.body.brand;
+            car.make = req.body.make;
             car.model = req.body.model;
-            car.consumption = Number(req.body.consumption);
-            car.plateNumber = req.body.plateNumber;
+            car.mpg = Number(req.body.mpg);
+            car.plate = req.body.plate;
             car.reserved = req.body.reserved;
 
             car.save()

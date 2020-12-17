@@ -12,25 +12,25 @@ class CreateCar extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeBrand = this.onChangeBrand.bind(this);
+        this.onChangemake = this.onChangemake.bind(this);
         this.onChangeModel = this.onChangeModel.bind(this);
-        this.onChangeConsumption = this.onChangeConsumption.bind(this);
-        this.onChangePlateNumber = this.onChangePlateNumber.bind(this);
+        this.onChangempg = this.onChangempg.bind(this);
+        this.onChangeplate = this.onChangeplate.bind(this);
         this.onChangeReserved = this.onChangeReserved.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            brand: '',
+            make: '',
             model: '',
-            consumption: 0,
-            plateNumber: '',
+            mpg: 0,
+            plate: '',
             reserved: ''
         }
     }
 
-    onChangeBrand(e) {
+    onChangemake(e) {
         this.setState({
-            brand: e.target.value
+            make: e.target.value
         })
     }
 
@@ -40,15 +40,15 @@ class CreateCar extends Component {
         })
     }
 
-    onChangeConsumption(e) {
+    onChangempg(e) {
         this.setState({
-            consumption: e.target.value
+            mpg: e.target.value
         })
     }
 
-    onChangePlateNumber(e) {
+    onChangeplate(e) {
         this.setState({
-            plateNumber: e.target.value
+            plate: e.target.value
         })
     }
 
@@ -61,10 +61,10 @@ class CreateCar extends Component {
         e.preventDefault();
 
         const car = {
-            brand: this.state.brand,
+            make: this.state.make,
             model: this.state.model,
-            consumption: this.state.consumption,
-            plateNumber: this.state.plateNumber,
+            mpg: this.state.mpg,
+            plate: this.state.plate,
             reserved: this.state.reserved
         }
 
@@ -73,10 +73,10 @@ class CreateCar extends Component {
             .then(res => console.log(res.data));
 
         this.setState({
-            brand: "",
+            make: "",
             model: "",
-            consumption: 0,
-            plateNumber: "",
+            mpg: 0,
+            plate: "",
             reserved: ""
         })
 
@@ -98,8 +98,8 @@ class CreateCar extends Component {
                             placeholder="Ide írja a márkát"
                             required
                             className="form-control"
-                            value={this.state.brand}
-                            onChange={this.onChangeBrand}
+                            value={this.state.make}
+                            onChange={this.onChangemake}
                         />
                     </div>
                     <div className="form-group">
@@ -118,8 +118,8 @@ class CreateCar extends Component {
                             placeholder="Ide írja be a fogyasztást"
                             required
                             className="form-control"
-                            value={this.state.consumption}
-                            onChange={this.onChangeConsumption}
+                            value={this.state.mpg}
+                            onChange={this.onChangempg}
                         />
                     </div>
                     <div className="form-group">
@@ -128,8 +128,8 @@ class CreateCar extends Component {
                              placeholder="Ide írja a rendszámot"
                             required
                             className="form-control"
-                            value={this.state.plateNumber}
-                            onChange={this.onChangePlateNumber}
+                            value={this.state.plate}
+                            onChange={this.onChangeplate}
                         />
                     </div>
                     <div className="form-group">

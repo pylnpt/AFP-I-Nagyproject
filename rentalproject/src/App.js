@@ -1,8 +1,8 @@
 import React from "react";
-import logo from './logo.svg';
 import './App.css';
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import Helmet from 'react-helmet';
 
 import {Provider} from "react-redux";
 import store from "./store";
@@ -14,6 +14,7 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 // styles
 import "./assets/css/bootstrap.min.css";
 import "./assets/demo/demo.css";
+import "./assets/scss/paper-kit.scss";
 // pages
 import Index from "./views/Index.js";
 import NucleoIcons from "./views/Nucleolcons.js";
@@ -49,6 +50,9 @@ function App() {
   return (
     
     <Provider store={store}>
+      <Helmet>
+        <title>Miraculum Autókölcsönző</title>
+      </Helmet>
   <BrowserRouter>
     <Switch>
       <Route path="/" render={props => <Index {...props} />} exact/>

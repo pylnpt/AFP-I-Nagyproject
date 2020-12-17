@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 // reactstrap components
 import {
@@ -45,14 +46,14 @@ function LandingPage() {
                   féle elektromos és hybrid autóból is választhatnak ügyfeleink.
                 </h5>
                 <br />
-                <Button
+                <Link
                   className="btn-round"
                   color="info"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  to="/our-cars"
                 >
                   Kínálatunk
-                </Button>
+                </Link>
               </Col>
             </Row>
             <br />
